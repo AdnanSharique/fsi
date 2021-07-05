@@ -6,7 +6,7 @@
 
 * An Azure Account with the ability to create an Azure Synapse Workspace.
 * A Power BI Pro or Premium account to host Power BI reports.
-* Make sure you are the Power BI admin for your account and service principal access has been enabled on your workspace.
+* Make sure you are the Power BI administrator for your account and service principal access is enabled on your Power BI tenant.
 * Make sure the following resource providers are registered with your Azure Subscription.
    - Microsoft.Sql 
    - Microsoft.Synapse 
@@ -14,9 +14,9 @@
    - Microsoft.EventHub 
    - Microsoft.Media.MediaServices
 * You can run only one deployment at any point in time and need to wait for its completion. You should not run multiple deployments in parallel as that will cause deployment failures.
-* Select a region where the desired Azure Services are available. If certain services are not available, deployment may fail. [Azure Services Global Availability](https://azure.microsoft.com/en-us/global-infrastructure/services/?products=all) for understanding target service availability. (consider the region availability for Synapse workspace, Iot Central and cognitive services while choosing a location)
+* Select a region where the desired Azure Services are available. If certain services are not available, deployment may fail. See [Azure Services Global Availability](https://azure.microsoft.com/en-us/global-infrastructure/services/?products=all) for understanding target service availability. (consider the region availability for Synapse workspace, Iot Central and cognitive services while choosing a location)
 * Do not use any special characters or uppercase letters in the environment code. Also, do not re-use your environment code.
-* In this setup we have converted Real-time reports into static reports for the ease of users but have covered entire process to configure Realtime dataset. Using those Realtime dataset you can create Realtime reports.
+* In this Accelerator we have converted Real-time reports into static reports for the ease of users but have covered entire process to configure Realtime dataset. Using those Realtime dataset you can create Realtime reports.
 * Please ensure that you select the correct resource group name. We have given a sample name which may need to be changed should any resource group with the same name already exist in your subscription.
 * The audience for this document is CSAs and GBBs.
 * Please log in to Azure and Power BI using the same credentials.
@@ -33,8 +33,8 @@
   - [Task 3: Deploy the ARM Template](#task-3-deploy-the-arm-template)
   - [Task 4: Run the Cloud Shell](#task-4-run-the-cloud-shell)
   - [Task 5: Create Power BI reports and Dashboard](#task-5-create-power-bi-reports-and-dashboard)
-  - [Task 6: Pause-Resume resources](#task-10-pause-resume-resources)
-  - [Task 7: Clean up resources](#task-11-clean-up-resources)
+  - [Task 6: Pause/Resume script](#task-10-pause-resume-resources)
+  - [Task 7: Clean up environment](#task-11-clean-up-resources)
 
 <!-- /TOC -->
 
@@ -54,7 +54,7 @@
 
 	![A portion of the Azure Portal home screen is displayed with Create Resource Group tile](media/resource-group-2.png)
 	
-5. On the 'Create a resource group' screen, **select** your desired Subscription. For Resource group, **type** 'Synapse-Fsi-Lab'. 
+5. On the 'Create a resource group' screen, **select** your desired Subscription. For Resource group, **type** 'DDiB-FSI-Lab'. 
 
 6. **Select** your desired region.
 
@@ -72,11 +72,11 @@
 
 1. **Open** Power BI in a new tab using the following link:  [https://app.powerbi.com/](https://app.powerbi.com/)
 
-2. **Sign in**, to Power BI using Power BI Pro account.
+2. **Sign in**, to Power BI using your Power BI Pro account.
 
 	![Sign in to Power BI.](media/power-bi.png)
 
-	> **Note:** Please use the same credentials for Power BI which you will be using for Azure Account.
+	> **Note:** Use the same credentials for Power BI which you will be using for the Azure account.
 
 3. In Power BI service **Click** on 'Workspaces'.
 
@@ -84,7 +84,7 @@
 
 	![Create Power BI Workspace.](media/power-bi-2.png)
 
-	> **Note:** Please create a Workspace by the name "Engagement Accelerators – Fsi".
+	> **Note:** Please create a Workspace by the name "DDiB-FSI".
 
 5. **Copy** the Workspace GUID or ID. You can get this by browsing to [https://app.powerbi.com/](https://app.powerbi.com/), selecting the workspace, and then copying the GUID 	from the address URL.
 
@@ -108,70 +108,181 @@
 
 	![Switch Historical data analysis on.](media/power-bi-6.png)
 
-11. **Enter** ‘fsi-streaming-dataset’ as dataset name and **enter** the column names in “values from stream” option from list below  and **click** on create button: 
-	- Subscribers_before		:	number
-	- Viewers_before 		:	number
-	- Session_time_before 		:	number
-	- Subscription_churn_before 	:	number
-	- Subscribers_after 		:	number
-	- Viewers_after 		:	number
-	- Session_time_after 		:	number
-	- Subscription_churn_after 	:	number
-	- Timestamp 			:	datetime
-	- Letency_before 		:	number
-	- Letency_after 		:	number
-	- Streaming_unit_before 	:	number
-	- Streaming_unit_after 		:	number
-	- Roku_viewers_before 		:	number
-	- Roku_viewers_after 		:	number
-	- iOS_viewers_before 		:	number
-	- iOS_viewers_after 		:	number
-	- Web_viewers_before 		:	number
-	- Web_viewers_after 		:	number
-	- Android_viewers_before 	:	number
-	- Android_viewers_after 	:	number
-	- Ads_session_before 		:	number
-	- Ads_session_after 		:	number
-	- Sports_session_before 	:	number
-	- Sports_session_after 		:	number
-	- Technology_session_before 	:	number
-	- Technology_session_after 	:	number
-	- Security_session_before 	:	number
-	- Security_session_after 	:	number
-	- Education_session_before 	:	number
-	- Education_session_after 	:	number
-	- Response_time_before 		:	number
-	- Response_time_after 		:	number
-	- Revenue_before 		:	text
-	- Revenue_after 		:	text
-
+11. **Enter** ‘Before-scenario-cco-dataset’ as dataset name and **enter** the column names in “values from stream” option from list below  and **click** on create button: 
+	- NPS 				:	number
+	- TargetNPS  			:	number
+	- CustomerChurn  		:	number
+	- TargetCustomerChurn  		:	number
+	- AccountOpeningTime  		:	number
+	- TargetAccountOpeningTime  	:	number
+	- RequestsWithinSLA  		:	number
+	- TargetRequestsWithinSLA  	:	number
+	- SocialSentiment  		:	text
+	- NPSAfter  			:	number
+	- TargetNPSAfter  		:	number
+	- CustomerChurnAfter  		:	number
+	- TargetCustomerChurnAfter  	:	number
+	- AccountOpeningTimeAfter  	:	number
+	- TargetAccountOpeningTimeAfter :	number
+	- RequestsWithinSLAAfter  	:	number
+	- TargetRequestsWithinSLAAfter  :	number
+	- SocialSentimentAfter  	:	text
+	
 	![Create new streaming dataset.](media/power-bi-7.png)
 
-12. **Copy** the push url of dataset and place it in a notepad for later use.
+12. **Copy** the push url of dataset ‘Before-scenario-cco-dataset’ and place it in a notepad for later use.
 
 	![Provide the Push Url.](media/power-bi-8.png)
 
-13. **Navigate** to [https://www.videoindexer.ai/](https://www.videoindexer.ai/).
+13. **Enter** ‘Before-scenario-financial-hcrr-dataset’ as dataset name and **enter** the column names in “values from stream” option from list below and **click** on create button: 
+	- InvestigationResponseTime :number
+	- TargetInvestigationResponseTime :number
+	- PerfvsEfficiency :number
+	- TargetPerfvsEfficiency :number
+	- SanctionsAlertRate :number
+	- TargetSanctionsAlertRate :number
+	- OpenTransactionsAlertLevel1 :number
+	- TargetOpenTransactionsAlertLevel1 :number
+	- OpenTransactionsAlertLevel2 : number
+	- TargetOpenTransactionsAlertLevel2 :number
+	- AlertsClosedWithSLA :number
+	- TargetAlertsClosedWithSLA :number
+	- KYCAlertinSanctions :number
+	- TargetKYCAlertinSanctions : number
+	- KYCAlertinPEP:number
+	- TargetKYCAlertinPEP: number
+	- TargetKYCAlertinMedia : number
+	- Vulnerabilities : number
+	- KYCAlertinMedia:number
+	- TargetVulnerabilities: number
+	- InvestigationResponseTimeCyberSec : number
+	- TargetInvestigationResponseTimeCyberSec: number
+	- TerminatedEmployeesAccess: number
+	- TargetTerminatedEmployeesAccess: number
+	- UnauthorizedEmployees: number
+	- TargetUnauthorizedEmployees: number
+	- NoHardwareSecurity: number
+	- TargetNoHardwareSecurity: number
+	- CreditRiskExposure: number
+	- TargetCreditRiskExposure: number
+	- FinancialCrime: number
+	- TargetFinancialCrime: number
+	- TradingExposure: number
+	- TargetTradingExposure: number
+	- ESGAssets: number
+	- TargetESGAssets: number
+	- ClaimsProcessingCycleTime: number
+	- TargetClaimsProcessingCycleTime: number
+	- UnderwritingEfficiency: number
+	- TargetUnderwritingEfficiency: number
+	- OverallCreditRisk: number
+	- TargetOverallCreditRisk: number
+	- OverallOperationalRisk: number
+	- TargetOverallOperationalRisk: number
 
-14. **Click** on AAD Account.
+14. **Copy** the push url of dataset ‘Before-scenario-financial-hcrr-dataset’ and place it in a notepad for later use.
+
+15. **Enter** ‘Before-after-scenario-group-ceo-dataset’ as dataset name and **enter** the column names in “values from stream” option from list below and **click** on create button:: 
+	- CSAT :number
+	- AverageAttrition :number
+	- ComplianceScore :number
+	- CustomerChurn :number
+	- CustomerChurnAfter :number
+	- EmployeeSatisfaction :number
+	- EmployeeSatisfactionAfter :number
+	- TargetCustomerChurn :number
+	- TargetCustomerChurnAfter :datetime
+	- TargetAverageAttrition :number
+	- TargetEmployeeSatisfaction :number
+	- TargetEmployeeSatisfactionAfter :number
+	- TargetComplianceScore :number
+	- RelativePerformancetoS&P500 :number
+	- RelativePerformancetoS&P500After :number
+	- TargetRelativePerformancetoS&P500 :number
+	- TargetRelativePerformancetoS&P500After :number
+	- QuarterlyClaimsProcessingEfficiency :number
+	- QuarterlyClaimsProcessingEfficiencyAfter :number
+	- TargetQuarterlyClaimsProcessingEfficiency :number
+	- TargetQuarterlyClaimsProcessingEfficiencyAfter :number
+	- CSRRating :number
+	- CSRRatingAfter :number
+	- TargetCSRRating :number
+	- TargetCSRRatingAfter :number
+	- ChannelEngagementRiskofChurn :number
+	- ChannelEngagementRiskofChurnAfter :number
+	- TargetChannelEngagementRiskofChurn :number
+
+16. **Copy** the push url of dataset ‘Before-after-scenario-group-ceo-dataset’ and place it in a notepad for later use.
+
+17. **Enter** ‘After-scenario-financial-hcrr-dataset’ as dataset name and **enter** the column names in “values from stream” option from list below and **click** on create button:
+
+	- InvestigationResponseTime :number
+	- TargetInvestigationResponseTime :number
+	- PerfvsEfficiency :number
+	- TargetPerfvsEfficiency :number
+	- SanctionsAlertRate :number
+	- TargetSanctionsAlertRate :number
+	- OpenTransactionsAlertLevel1 :number
+	- TargetOpenTransactionsAlertLevel1 :number
+	- OpenTransactionsAlertLevel2 : number
+	- TargetOpenTransactionsAlertLevel2 :number
+	- AlertsClosedWithSLA :number
+	- TargetAlertsClosedWithSLA :number
+	- KYCAlertinSanctions :number
+	- TargetKYCAlertinSanctions : number
+	- KYCAlertinPEP:number
+	- TargetKYCAlertinPEP: number
+	- TargetKYCAlertinMedia : number
+	- Vulnerabilities : number
+	- KYCAlertinMedia:number
+	- TargetVulnerabilities: number
+	- InvestigationResponseTimeCyberSec : number
+	- TargetInvestigationResponseTimeCyberSec: number
+	- TerminatedEmployeesAccess: number
+	- TargetTerminatedEmployeesAccess: number
+	- UnauthorizedEmployees: number
+	- TargetUnauthorizedEmployees: number
+	- NoHardwareSecurity: number
+	- TargetNoHardwareSecurity: number
+	- CreditRiskExposure: number
+	- TargetCreditRiskExposure: number
+	- FinancialCrime: number
+	- TargetFinancialCrime: number
+	- TradingExposure: number
+	- TargetTradingExposure: number
+	- ESGAssets: number
+	- TargetESGAssets: number
+	- TargetClaimsProcessingCycleTime: number
+	- UnderwritingEfficiency: number
+	- TargetUnderwritingEfficiency: number
+	- OverallCreditRisk: number
+	- TargetOverallCreditRisk: number
+	- OverallOperationalRisk: number
+	- TargetOverallOperationalRisk: number
+
+18. **Copy** the push url of dataset ‘After-scenario-financial-hcrr-dataset’ and place it in a notepad for later use.
+
+19. **Navigate** to [https://www.videoindexer.ai/](https://www.videoindexer.ai/).
+
+20. **Click** on AAD Account.
 
 	![Click on AAD Account.](media/video-indexer.png)
 
 	> **Note:** You may be prompted to enter the azure credentials.
 
-15. **Click** on Account settings.
+21. **Click** on Account settings.
 
-16. **Copy** the Account ID in a notepad. This will be needed during template deployment.
+22. **Copy** the Account ID in a notepad. This will be needed during template deployment.
 
 	![Copy the AccountID.](media/video-indexer-2.png)
 
-17. **Navigate** to [https://api-portal.videoindexer.ai/](https://api-portal.videoindexer.ai/).
+23. **Navigate** to [https://api-portal.videoindexer.ai/](https://api-portal.videoindexer.ai/).
 
-18. **Click** sign in if not already signed in.
+24. **Click** sign in if not already signed in.
 
-19. **Click** on profile.
+25. **Click** on profile.
 
-20. **Copy** the primary key. This will be needed during template deployment.
+26. **Copy** the primary key. This will be needed during template deployment.
 
 	![Copy the primary key.](media/video-indexer-3.png)
 
@@ -180,11 +291,11 @@
 
 1. **Open** this link in a new tab of the same browser that you are currently in: 
 	
-	<a href='https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FAzure-Analytics-and-AI-Engagement%2Ffsi%2Ffsi%2F%2FmainTemplate.json' target='_blank'><img src='http://azuredeploy.net/deploybutton.png' /></a>
+	<a href='https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FAzure-Analytics-and-AI-Engagement%2Ffsi%2Ffsidemo%2FmainTemplate.json' target='_blank'><img src='http://azuredeploy.net/deploybutton.png' /></a>
 
 2. On the Custom deployment form, **select** your desired Subscription.
 
-3. **Select** the resource group name **Synapse-Fsi-Lab** which you created in [Task 1](#task-1-create-a-resource-group-in-azure).
+3. **Select** the resource group name **DDiB-FSI-Lab** which you created in [Task 1](#task-1-create-a-resource-group-in-azure).
 
 4. **Provide/Type** an environment code which is unique to your environment. This code is a suffix to your environment and should not have any special characters or uppercase letters and should not be more than 6 characters. 
 
@@ -192,51 +303,35 @@
 
 6. **Enter** the Power BI workspace ID created in [Task 2](#task-2-power-bi-workspace-creation).
 
-7. **Enter** the Power BI streaming dataset url you copied in step 12 of task 2.
+7. **Enter** the power BI streaming dataset url for **Before-scenario-financial-hcrr-dataset** you copied in step 14 of task 2.
 
-8. **Enter** video indexer account id and api key copied earlier.
+8. **Enter** the power BI streaming dataset url for **After-scenario-financial-hcrr-dataset** you copied in step 18 of task 2.
 
-9. **Click** ‘Review + Create’ button.
+9. **Enter** the power BI streaming dataset url for **Before-scenario-cco-dataset** you copied in step 12 of task 2.
+
+10. **Enter** the power BI streaming dataset url for **Before-after-scenario-group-ceo-dataset** you copied in step 16 of task 2.
+
+11. **Enter** video indexer account id and api key copied earlier.
+
+12. **Enter** Luis cog service location from given drop down.
+
+13. **Click** ‘Review + Create’ button.
 
 	![The Custom deployment form is displayed with example data populated.](media/video-indexer-4.png)
 
-10. **Click** the **Create** button once the template has been validated.
+14. **Click** the **Create** button once the template has been validated.
 
 	![Creating the template after validation.](media/video-indexer-5.png)
 
 	> **NOTE:** The provisioning of your deployment resources will take approximately 20 minutes.
 
-11. **Stay** on the same page and wait for the deployment to complete.
+15. **Stay** on the same page and wait for the deployment to complete.
     
 	![A portion of the Azure Portal to confirm that the deployment is in progress.](media/microsoft-template.png)
     
-12. **Select** the **Go to resource group** button once your deployment is complete.
+16. **Select** the **Go to resource group** button once your deployment is complete.
 
 	![A portion of the Azure Portal to confirm that the deployment is in progress.](media/microsoft-template-2.png)
-
-13. **Search** for ‘logic-app-video’ in the resource group.
-
-14. **Click** on the resulting logic app.
-
-	![Search Logic App.](media/logic-app.png)
-
-15. **Click** on Logic app designer in the left pane of logic app.
-
-16. **Click** on Condition to expand it.
-
-17. **Copy** the statement written in Uri box. Clicking in Uri will also open a pop up.
-
-18. **Click** on Expression tab in the pop up.
-
-19. **Paste** the copied expression in function definition fx.
-
-20. **Click** ok.
-
-	![Paste the copied expression.](media/logic-app-2.png)
-
-21. **Click** save button at the top.
-
-	![Click Save button.](media/logic-app-3.png)
 
 ### Task 4: Run the Cloud Shell to provision the demo resources
 
@@ -273,7 +368,7 @@ git clone -b fsi https://github.com/microsoft/Azure-Analytics-and-AI-Engagement.
 5. **Execute** the fsiSetup.ps1 script by executing the following command:
 Command:
 ```
-cd ./fsi/fsi/
+cd ./fsi/fsidemo
 ```
 
 6. Then **run** the PowerShell: 
@@ -324,10 +419,10 @@ cd ./fsi/fsi/
 	![Close the browser tab.](media/cloud-shell-13.png)
 
 	> **Notes:**
-	> -While you are waiting for processes to get completed in the Azure Cloud Shell window, you'll be asked to enter the code three times. This is necessary for performing installation of various Azure Services and preloading content in the Azure Synapse Analytics SQL Pool tables.
+	> - While you are waiting for processes to get completed in the Azure Cloud Shell window, you'll be asked to enter the code three times. This is necessary for performing installation of various Azure Services and preloading content in the Azure Synapse Analytics SQL Pool tables.
 	> - You may be prompted to choose a subscription after the above-mentioned step if you have multiple subscriptions associated with your account. Choose the **subscription** that you used to sign in to the Azure portal. 
 
-19. You will now be prompted to **enter** the resource group name in the Azure Cloud Shell. Type the same resource group name that you created in [Task 1](#task-1-create-a-resource-group-in-azure). – ‘Synapse-Fsi-Lab’.
+19. You will now be prompted to **enter** the resource group name in the Azure Cloud Shell. Type the same resource group name that you created in [Task 1](#task-1-create-a-resource-group-in-azure). – 'DDiB-FSI-Lab'.
 
 	![Enter Resource Group name.](media/cloud-shell-14.png)
 
@@ -641,7 +736,7 @@ To hide title and subtitle for all the images that you have pined above. Please 
 **Execute** the Pause_Resume_script.ps1 script by executing the following command: 
 1. **Run** Command: 
 	```
-	cd "fsi\fsi"
+	cd "fsi\fsidemo"
 	```
 
 2. Then **run** the PowerShell script: 
@@ -667,7 +762,7 @@ To hide title and subtitle for all the images that you have pined above. Please 
 
 	![Select the same user and Close.](media/authentication-2.png)
 
-8. When prompted, **enter** the resource group name to be paused/resumed in the Azure Cloud Shell. Type the same resource group name that you created i.e. 'Synapse-Fsi-Lab'. 
+8. When prompted, **enter** the resource group name to be paused/resumed in the Azure Cloud Shell. Type the same resource group name that you created. 
 	
 	![Enter the Resource Group Name.](media/authentication-3.png)
 
@@ -691,7 +786,7 @@ To hide title and subtitle for all the images that you have pined above. Please 
 
 2. **Run** Command: 
 	```
-	cd "fsi\fsi"
+	cd "fsi\fsidemo"
 	```
 
 3. Then **run** the PowerShell script: 
@@ -701,7 +796,7 @@ To hide title and subtitle for all the images that you have pined above. Please 
 
 	![Run the Powershell Script.](media/authentication-6.png)
 
-4. You will now be prompted to **enter** the resource group name to be deleted in the Azure Cloud Shell. Type the same resource group name that you created in [Task 1](#task-1-create-a-resource-group-in-azure) - 'Synapse-Fsi-Lab'.
+4. You will now be prompted to **enter** the resource group name to be deleted in the Azure Cloud Shell. Type the same resource group name that you created in [Task 1](#task-1-create-a-resource-group-in-azure) - 'DDib-FSI'.
 
 5. You may be prompted to select a subscription in case your account has multiple subscriptions.
 
