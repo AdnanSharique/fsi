@@ -180,7 +180,11 @@
 	- OverallOperationalRisk: number
 	- TargetOverallOperationalRisk: number
 
+	![Create new streaming dataset.](media/power-bi-9.png)
+
 14. **Copy** the push url of dataset ‘Before-scenario-financial-hcrr-dataset’ and place it in a notepad for later use.
+
+	![Provide the Push Url.](media/power-bi-8.png)
 
 15. **Enter** ‘Before-after-scenario-group-ceo-dataset’ as dataset name and **enter** the column names in “values from stream” option from list below and **click** on create button:: 
 	- CSAT :number
@@ -212,7 +216,11 @@
 	- ChannelEngagementRiskofChurnAfter :number
 	- TargetChannelEngagementRiskofChurn :number
 
+	![Create new streaming dataset.](media/power-bi-10.png)
+
 16. **Copy** the push url of dataset ‘Before-after-scenario-group-ceo-dataset’ and place it in a notepad for later use.
+
+	![Provide the Push Url.](media/power-bi-8.png)
 
 17. **Enter** ‘After-scenario-financial-hcrr-dataset’ as dataset name and **enter** the column names in “values from stream” option from list below and **click** on create button:
 
@@ -260,7 +268,11 @@
 	- OverallOperationalRisk: number
 	- TargetOverallOperationalRisk: number
 
+	![Create new streaming dataset.](media/power-bi-11.png)
+
 18. **Copy** the push url of dataset ‘After-scenario-financial-hcrr-dataset’ and place it in a notepad for later use.
+
+	![Provide the Push Url.](media/power-bi-8.png)
 
 19. **Navigate** to [https://www.videoindexer.ai/](https://www.videoindexer.ai/).
 
@@ -307,6 +319,8 @@
 
 8. **Enter** the power BI streaming dataset url for **After-scenario-financial-hcrr-dataset** you copied in step 18 of task 2.
 
+	![The Custom deployment form is displayed with example data populated.](media/powerbi-deployment-1.png)
+
 9. **Enter** the power BI streaming dataset url for **Before-scenario-cco-dataset** you copied in step 12 of task 2.
 
 10. **Enter** the power BI streaming dataset url for **Before-after-scenario-group-ceo-dataset** you copied in step 16 of task 2.
@@ -317,11 +331,11 @@
 
 13. **Click** ‘Review + Create’ button.
 
-	![The Custom deployment form is displayed with example data populated.](media/video-indexer-4.png)
+	![The Custom deployment form is displayed with example data populated.](media/powerbi-deployment-2.png)
 
 14. **Click** the **Create** button once the template has been validated.
 
-	![Creating the template after validation.](media/video-indexer-5.png)
+	![Creating the template after validation.](media/powerbi-deployment-3.png)
 
 	> **NOTE:** The provisioning of your deployment resources will take approximately 20 minutes.
 
