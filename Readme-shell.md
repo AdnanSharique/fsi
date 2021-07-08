@@ -21,8 +21,7 @@
 * The audience for this document is CSAs and GBBs.
 * Please log in to Azure and Power BI using the same credentials.
 * Once the resources have been setup, please ensure that your AD user and synapse workspace have “Storage Blob Data Owner” role assigned on storage account name starting with “stfsi”. You need to contact AD admin to get this done.
-
-> **Note:** Please log in to Azure and Power BI using the same credentials.
+* Please review the [Liscence Agreement](https://github.com/microsoft/Azure-Analytics-and-AI-Engagement/blob/fsi/fsidemo/Power%20BI%20Embedding.md) before proceeding.
 
 ## Setup Tasks:
 
