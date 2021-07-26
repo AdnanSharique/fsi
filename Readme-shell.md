@@ -801,7 +801,7 @@ Table in following row indicates which Kpi’s need to be pinned from which repo
 
 	![Compute section and enter compute name.](media/aml-3.png)
 
-Note:  It will take few minutes to create a compute instance.
+> **Note:**  It will take few minutes to create a compute instance.
 
 6. **Open** Notebooks.
 
@@ -826,7 +826,7 @@ Note:  It will take few minutes to create a compute instance.
 
 	![Scroll and Open.](media/aml-7.png)
 
-**Task 6: Pause/Resume resources**
+###Task 7: Pause/Resume resources
 
 > **Note:** Please perform these steps after your demo is done and you do not need the environment anymore. Also ensure you Resume the environment before demo if you paused it once. 
  
@@ -875,7 +875,7 @@ Note:  It will take few minutes to create a compute instance.
 
 	![Enter your choice.](media/authentication-4.png)
 
-**Task 7: Clean up resources.**
+###Task 8 : Clean up resources.
 
 > **Note: Perform these steps after your demo is done and you do not need the resources anymore**
 
