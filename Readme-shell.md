@@ -537,7 +537,7 @@ Follow these steps to create the Power BI dashboard:
 Follow the below steps to change the dashboard theme:
 
 19. **Open** the URL in a new browser tab to get JSON code for a custom theme:
-https://raw.githubusercontent.com/microsoft/Azure-Analytics-and-AI-Engagement/main/HealthCare/CustomTheme.json
+https://raw.githubusercontent.com/microsoft/Azure-Analytics-and-AI-Engagement/fsi/fsidemo/CustomTheme.json
 
 20. **Right click** anywhere in browser and **click** 'Save as...'.
 
@@ -561,7 +561,7 @@ https://raw.githubusercontent.com/microsoft/Azure-Analytics-and-AI-Engagement/ma
 
 	![Navigate Select and Click Save.](media/power-bi-dashboard-6.png)
 
-Do the following to pin visuals to the dashboard you just created: 
+Do the following to pin visuals to the dashboard you just created:
 **Pillar 3: Market Perception**
 
 28. **Select** the workspace [Task2](#task-2-create-power-bi-workspace).
@@ -652,136 +652,136 @@ To hide title and subtitle for all the images that you have pined above. Please 
 
 53. **Click** on add a tile button.
 
-	[Create a new tile.](media/report-9.png)
+	![Create a new tile.](media/report-9.png)
 	
 54. Then **go to** Text Box and there you can **add** the text and the text format it.
 	
-	[Add text.](media/report-10.png)
+	![Add text.](media/report-10.png)
 
 55. **Refer** to the screenshot of the sample dashboard and pin the visuals to replicate its look and feel. 
 
 56. **Latest** pillar ‘Chief Customer Officer Before’ is completed.
 
-	[Pin the visuals.](media/report-11.png)
+	![Pin the visuals.](media/report-11.png)
 
 57. You will see some KPIs or charts like this KPI with title and subtitle. 1. Title, 2. Subtitle.
 
-	[KPIs.](media/report-12.png)
+	![KPIs.](media/report-12.png)
 
 58. **Go** to the cards more options.
 
 59. **Click** on Edit Details.
 
-	[Cards more options.](media/report-13.png)
+	![Cards more options.](media/report-13.png)
 
 60. You will see something like this picture where you can add subtitle.
 	
-	[Add subtitle.](media/report-14.png)
+	![Add subtitle.](media/report-14.png)
 
 61. The Dashboard “Chief Customer Officer Before” should finally look like this.
 Table in following row indicates which Kpi’s need to be pinned from which report to achieve this final look.
-
-	[Final look.](media/report-15.png)
+	
+![Final look.](media/report-15.png)
 	
 62. **Refer** to this table while pinning rest of the tiles to the dashboard.
 	
-	[Refer the table.](media/report-16.png)
+	![Refer the table.](media/report-16.png)
 
 63. Here is the list of Dashboards you have to create for FSI. You will see the necessary details for the same below.
 
-	[List of Dashboards.](media/report-17.png)
+	![List of Dashboards.](media/report-17.png)
 
 64. Chief Customer Officer After Dashboard should look like this. Following are the details of tiles for the same.
 
-	[Chief Customer Officer.](media/report-18.png)
+	![Chief Customer Officer.](media/report-18.png)
 
 65. Chief Customer Officer After KPIs.
 
-	[Chief Customer Officer After KPIs.](media/report-19.png)
+	![Chief Customer Officer After KPIs.](media/report-19.png)
 
 66. ESG Dashboard Dashboard should look like this. Following are the details of tiles for the same.
 
-	[ESG Dashboard Dashboard.](media/report-20.png)
+	![ESG Dashboard Dashboard.](media/report-20.png)
 
 67. ESG Dashboard KPIs
 
-	[ESG Dashboard KPIs.](media/report-21.png)
+	![ESG Dashboard KPIs.](media/report-21.png)
 
 68. Finance Dashboard should look like this. Following are the details of tiles for the same.
 
-	[Finance Dashboard.](media/report-22.png)
+	![Finance Dashboard.](media/report-22.png)
 
 69. Finance Dashboard KPIs
 
-	[Finance Dashboard KPIs.](media/report-23.png)
+	![Finance Dashboard KPIs.](media/report-23.png)
 
 70. Group Chief Risk Officer After Dashboard
 
-	[Group Chief Risk Officer.](media/report-24.png)
+	![Group Chief Risk Officer.](media/report-24.png)
 
 71. Group Chief Risk Officer After Dashboard KPIs
 
-	[Group Chief Risk Officer After Dashboard KPIs.](media/report-25.png)
+	![Group Chief Risk Officer After Dashboard KPIs.](media/report-25.png)
 
 72. Group Chief Risk Officer Before Dashboard
 
-	[Group Chief Risk Officer.](media/report-26.png)
+	![Group Chief Risk Officer.](media/report-26.png)
 
 73. Group Chief Risk Officer Before KPIs
 
-	[Group Chief Risk Officer Before KPIs.](media/report-27.png)
+	![Group Chief Risk Officer Before KPIs.](media/report-27.png)
 
 74. Head of Financial Intelligence After Dashboard
 
-	[Head of Financial Intelligence.](media/report-28.png)
+	![Head of Financial Intelligence.](media/report-28.png)
 
 75. Head of Financial Intelligence After KPI
 
-	[Head of Financial Intelligence After KPI.](media/report-29.png)
+	![Head of Financial Intelligence After KPI.](media/report-29.png)
 
 76. Head of Financial Intelligence Before Dashboard
 
-	[Head of Financial Intelligence.](media/report-30.png)
+	![Head of Financial Intelligence.](media/report-30.png)
 
 77. Head of Financial Intelligence Before KPIs
 
-	[Head of Financial Intelligence Before KPIs.](media/report-31.png)
+	![Head of Financial Intelligence Before KPIs.](media/report-31.png)
 
 78. Woodgrove Executive Dashboard Dec
 
-	[Woodgrove Executive Dashboard Dec.](media/report-32.png)
+	![Woodgrove Executive Dashboard Dec.](media/report-32.png)
 
 79. Woodgrove Executive Dashboard Dec KPIs
 
-	[Woodgrove Executive Dashboard Dec KPIs.](media/report-33.png)
+	![Woodgrove Executive Dashboard Dec KPIs.](media/report-33.png)
 
 80. Woodgrove Executive Dashboard June
 
-	[Woodgrove Executive Dashboard June.](media/report-34.png)
+	![Woodgrove Executive Dashboard June.](media/report-34.png)
 
 81. Woodgrove Executive Dashboard June KPIs
 
-	[Woodgrove Executive Dashboard June KPIs.](media/report-35.png)
+	![Woodgrove Executive Dashboard June KPIs.](media/report-35.png)
 
 82. Woodgrove Executive Dashboard March KPIs
 
-	[Woodgrove Executive Dashboard March KPIs.](media/report-36.png)
+	![Woodgrove Executive Dashboard March KPIs.](media/report-36.png)
 
 83. Woodgrove Executive Dashboard September
 
-	[Woodgrove Executive Dashboard September.](media/report-37.png)
+	![Woodgrove Executive Dashboard September.](media/report-37.png)
 
 84. Woodgrove Executive Dashboard September KPIs
 
-	[Woodgrove Executive Dashboard September KPIs.](media/report-38.png)
+	![Woodgrove Executive Dashboard September KPIs.](media/report-38.png)
 
 85. Woodgrove Executive Dashboard September 2
 
-	[Woodgrove Executive Dashboard September 2.](media/report-39.png)
+	![Woodgrove Executive Dashboard September 2.](media/report-39.png)
 
 86. Dashboard KPI’s.
 
-	[Dashboard KPI’s.](media/report-40.png)
+	![Dashboard KPI’s.](media/report-40.png)
 
 ### Task 6: AML notebook execution
 
@@ -789,17 +789,17 @@ Table in following row indicates which Kpi’s need to be pinned from which repo
 
 2. **Type** in filter “amlws-” and open the resource.
 
-	[Open resource.](media/aml-1.png)
+	![Open resource.](media/aml-1.png)
 
 3. **Click** “Launch studio”
 
-	[Launch studio.](media/aml-2.png)
+	![Launch studio.](media/aml-2.png)
 
 4. **Login** with the same user that you used for signing into the Azure Portal in [Task 1](#task-1-create-a-resource-group-in-azure).
 
 5. **Open** Compute section and enter compute name, **select** “ STANDARD_DS2_V2” as compute quota and **click** on create.
 
-	[Compute section and enter compute name.](media/aml-3.png)
+	![Compute section and enter compute name.](media/aml-3.png)
 
 Note:  It will take few minutes to create a compute instance.
 
@@ -807,24 +807,24 @@ Note:  It will take few minutes to create a compute instance.
 
 7. **Click** on “ 8. Understanding and Removing Biases from Machine Learning Models using Azure Fairlearn” notebook.
 
-	[Open Notebooks.](media/aml-4.png)
+	![Open Notebooks.](media/aml-4.png)
 
 8. **Select** Compute created in step 5 and kernel as shown in image.
 
 9. **Click** run all.
 	
-	[Select Compute created.](media/aml-5.png)
+	![Select Compute created.](media/aml-5.png)
 
 10. **Scroll** through the notebook cells, at cell 16 execution it will ask to do device login. Follow the steps with same user.
 
-	[Scroll through the notebook.](media/aml-6.png)
+	![Scroll through the notebook.](media/aml-6.png)
 
 
 11. **Scroll** down till the end and wait for the green tick.
 
 12. **Open** Experiments and see if experiments are created.
 
-	[Scroll and Open.](media/aml-7.png)
+	![Scroll and Open.](media/aml-7.png)
 
 **Task 6: Pause/Resume resources**
 
