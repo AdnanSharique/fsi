@@ -905,4 +905,4 @@ Table in following row indicates which Kpi’s need to be pinned from which repo
 
 	![Enter the Resource Group Name.](media/authentication-7.png)
 	
-Your Dream Demo in a Box environment is now set up.
+Your Accelerator environment is now set up.
