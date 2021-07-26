@@ -494,247 +494,337 @@ To give permissions for the Power BI reports to access the data sources:
 
 5. **Click** the settings button.
 
+6. **Click** on settings.
+
 	![Authenticate Power BI Reports.](media/power-bi-report-4.png)
 
-6. **Click** 'Datasets' tab.
+7. **Click** 'Datasets' tab.
 
 	![Go to Datasets.](media/power-bi-report-5.png)
 
-7. **Click** on the first Dataset.
-8. **Expand** Data source credentials.
-9. **Click** Edit credentials and a dialogue box will pop up.
+8. **Click** on the first Dataset.
+9. **Expand** Data source credentials.
+10. **Click** Edit credentials and a dialogue box will pop up.
 
 	![Select Campaign.](media/power-bi-report-6.png)
 
-10. **Enter** Username as ‘labsqladmin’.
+11. **Enter** Username as ‘labsqladmin’.
 
-11. **Enter** the same SQL Administrator login password that was created for [Task 3](#task-3-deploy-the-arm-template) Step #5
+12. **Enter** the same SQL Administrator login password that was created for [Task 3](#task-3-deploy-the-arm-template) Step #5
 
-12. **Click** Sign in.
+13. **Click** Sign in.
 
 	![Configure Campaign.](media/power-bi-report-7.png)
 
 Follow these steps to create the Power BI dashboard:
 
-13. **Select** the workspace in [Task2](#task-2-create-power-bi-workspace).
+14. **Select** the workspace in [Task2](#task-2-create-power-bi-workspace).
 
-	![Select the workspace.](media/power-bi-dashboard.png)
+	![Select the workspace.](media/power-bi-report-2.png)
 
-14. **Click** on ‘+ New’ button on the top-left navigation bar.
+15. **Click** on ‘+ New’ button on the top-left navigation bar.
 
-15. **Click** the ‘Dashboard’ option from the drop-down menu.
+16. **Click** the ‘Dashboard’ option from the drop-down menu.
 
 	![Click the dashboard.](media/power-bi-dashboard-2.png)
 
-16. **Name** the dashboard ‘Fsi Dashboard-Before’ and **click** “create”. 
+17. **Name** the dashboard ‘Fsi Dashboard-Before’ and **click** “create”. 
 
-17. This new dashboard will appear in the Dashboard section (of the Power BI workspace). 
+18. This new dashboard will appear in the Dashboard section (of the Power BI workspace). 
 
 	![Name and Click Create.](media/power-bi-dashboard-3.png)
 
 Follow the below steps to change the dashboard theme:
 
-18. **Open** the URL in a new browser tab to get JSON code for a custom theme:
+19. **Open** the URL in a new browser tab to get JSON code for a custom theme:
 https://raw.githubusercontent.com/microsoft/Azure-Analytics-and-AI-Engagement/main/HealthCare/CustomTheme.json
 
-19. **Right click** anywhere in browser and **click** 'Save as...'.
+20. **Right click** anywhere in browser and **click** 'Save as...'.
 
-20. **Save** the file to your desired location on your computer, leaving the name unchanged.
+21. **Save** the file to your desired location on your computer, leaving the name unchanged.
 
 	![Save the File.](media/power-bi-dashboard-4.png)
 
-21. **Go back** to the Power BI dashboard you just created.
+22. **Go back** to the Power BI dashboard you just created.
 
-22. **Click** on the “Edit” at the top.
+23. **Click** on the “Edit” at the top right-side corner.
 
-23. **Click** on “Dashboard theme”.
+24. **Click** on “Dashboard theme”.
 
 	![Click on Dashboard Theme.](media/power-bi-dashboard-5.png)
 
-24. **Click** ‘Upload the JSON theme’.
+25. **Click** ‘Upload the JSON theme’.
 
-25. **Navigate** to the location where you saved the JSON theme file in the steps above and **select** open.
+26. **Navigate** to the location where you saved the JSON theme file in the steps above and **select** open.
 
-26. **Click** Save.
+27. **Click** Save.
 
 	![Navigate Select and Click Save.](media/power-bi-dashboard-6.png)
 
 Do the following to pin visuals to the dashboard you just created: 
-**Pillar 1: Video & Revenue Analytics**
+**Pillar 3: Market Perception**
 
-27. **Select** the workspace [Task2](#task-2-create-power-bi-workspace).
+28. **Select** the workspace [Task2](#task-2-create-power-bi-workspace).
 
-	![Select the workspace.](media/video-revenue-analytics.png)
+	![Select the workspace.](media/power-bi-report-2.png)
 
-28. **Click** on the “Content” section/tab.
+29. **Click** on the “Content” section/tab.
 
 	![Create Dashboard further steps.](media/video-revenue-analytics-2.png)
 
-29. In the “Content” section, there will be a list of all the published reports.
+30. In the “Content” section, there will be a list of all the published reports.
 
-30. **Click** on ‘Video & Revenue Analytics’.
-
-31. **Click** on ‘Video & Revenue Analytics Before’ page. 
+31. **Click** on ‘FSI CCO Dashboard’ report.
 
 	![Click on Video and Revenue Analytics.](media/video-revenue-analytics-3.png)
 
-32. On the Video and revenue analytics page, **click** the ‘Net Margin’ visual and **click** the pin icon.
+32. **Click** on ‘Market perception before’ page.
 
-	![Click the Pin Icon.](media/video-revenue-analytics-4.png)
+33. **Click** on pin visual button.
 
-33. **Select** ‘Existing dashboard’ radio button. 
+	![Click on Pin Visual button.](media/video-revenue-analytics-4.png)
 
-34. From ‘select existing dashboard’ dropdown, **select** ‘Fsi Dashboard-Before’.
+34. **Select** ‘Existing dashboard’ radio button. 
 
-35. **Click** ‘Pin’.
+35. From ‘select existing dashboard’ dropdown, **select** ‘Media Demo Dashboard-Before’.
 
-	![Select Fsi Dashboard.](media/video-revenue-analytics-5.png)
+36. **Click** ‘Pin’.
 
-36. Similarly, **pin** ‘YoY Growth (YTD)’, ‘Total Videos in Library’, ‘Churn Ratio’ and ‘Top 5 Categories’ from the report.
+	![Click Pin.](media/video-revenue-analytics-5.png)
 
-	![Pin YTD.](media/video-revenue-analytics-6.png)
+37. Similarly, **pin** the others tiles to the Dashboard.
 
-37. **Select** the Workspace in [Task2](#task-2-create-power-bi-workspace).
+	![Pin the others tiles.](media/video-revenue-analytics-6.png)
 
-	![Select the workspace.](media/fsi-poc.png)
+38. **Select** workpace created in task 2 in the left pane.
 
-38. **Open** ‘Fsi Master Images’ report and click edit.
+	![Select workspace.](media/power-bi-report-2.png)
 
-39. **Pin** all the images from report to the ‘Fsi Dashboard-Before’ dashboard.
+39. **Open** 'FSI-Chicklets' report.
 
-40. **Note:** Please refer to steps 32-35 of Task 5 for the complete procedure of pinning a desired visual to a dashboard.
+	![Open report.](media/video-revenue-analytics-7.png)
 
-	![Open and Pin.](media/fsi-poc-2.png)
+40. To pin an image into Dashboard you have to go to the report, **click** on edit and then you will see the pin icon.
 
-41. **Go back** to the ‘Fsi Dashboard-Before’ dashboard.
+	![Pin an image.](media/report-1.png)
 
-	![Go back to Fsi Dashboard.](media/fsi-poc-3.png)
+41. **Select** the ‘Chief Customer Officer Before’ from existing dashboard list and **click** on pin.
 
-42. **Go back** to the ‘Fsi Dashboard-Before’ dashboard.
+42. Similarly pin rest of the images from chief customer officer tab of the Chicklets report.
 
-	![Go back to Fsi Dashboard.](media/fsi-poc-4.png)
+	![Pin all image.](media/report-2.png)
+
+43. **Go back** to the ‘Chief Customer Officer Before’ dashboard.
+	
+	![Go back.](media/report-3.png)
 
 To hide title and subtitle for all the images that you have pined above. Please do the following:
 
-43. **Click** on ellipsis ‘More Options’ of the image you selected.
+44. **Click** on ellipsis ‘More Options’ of the image you selected.
 
-44. **Click** ‘Edit details’.
-
-	![Click Edit Details.](media/fsi-poc-5.png)
-
-45. **Uncheck** ‘Display title and subtitle’.
-
-46. **Click** ‘Apply’.
-
-47. **Repeat** Step 46 to 48 for all image tiles.
-
-	![Uncheck Click and Repeat.](media/fsi-poc-6.png)
-
-48. After disabling ‘Display title and subtitle’ for all images, **resize** and **rearrange** the top images tiles as shown in the screenshot. Resize the Contoso Healthcare logo to 1x1 size; resize other vertical tiles to 2x1 size.  
-
-	![Resize and Rearrange.](media/fsi-poc-7.png)
-
-49. **Resize** and **rearrange** the left images tiles as shown in the screenshot. Resize the KPI tile to 1x2. Resize the Deep Dive to 1x4.
-
-	![Resize and Rearrange.](media/fsi-poc-8.png)
-
-50. **Refer** to the screenshot of the sample dashboard and pin the visuals to replicate its look and feel. 
-
-51. **First** pillar ‘Video & Revenue Analytics’ is completed.
-
-	![Refer to the Screenshot.](media/fsi-poc-9.png)
-
-**Pillar 2: Audience Analytics**
-
-52. Let’s **start** Pinning the second pillar ‘Audience Analytics’.
-
-53. **Select** the Workspace in [Task2](#task-2-create-power-bi-workspace).
-
-	![Select the workspace.](media/fsi-poc-10.png)	
-
-54. **Open** ‘Audience Analytics’ report.
-
-55. **Click on** ‘Audience Analytics Before’ page.
-
-	![Click on Audience Analytics Before.](media/fsi-poc-11.png)
-
-56. Similarly, **pin** ‘Active Viewer’, ‘Unique Sessions’, ‘Video Completion Rate’,
-
-57. ‘Average Session Time’ and ‘Last 7 days Viewership’ from the report to the ‘Fsi Dashboard-Before’ dashboard.
-
-	![Pin.](media/fsi-poc-12.png)
-
-58. **Select** the Workspace in [Task2](#task-2-create-power-bi-workspace).
-
-	![Select the workspace.](media/fsi-poc-13.png)
-
-59. **Open** ‘Video & Revenue Analytics’ report.
-
-60. **Click** on ‘Video & Revenue Analytics Before’ page.
-
-	![Open and Click.](media/fsi-poc-14.png)
-
-61. On the Video & Revenue Analytics report page, **click** the ‘Net Margin’ visual and **click** the pin icon.
-
-	![Click the Pin Icon.](media/fsi-poc-15.png)
-
-62. **Refer** to the screenshot of the sample dashboard and pin the visuals to replicate its look and feel. 
-
-63. **Second** pillar ‘Audience Analytics’ is completed.
-
-	![Refer to the Screenshot.](media/fsi-poc-16.png)
-
-**Pillar 3:  Realtime Operational Analytics** 
-
-64. Let’s **start** Pinning the third pillar ‘Realtime Operational Analytics’
-
-65. **Select** the Workspace in [Task2](#task-2-create-power-bi-workspace).
-
-	![Select the workspace.](media/fsi-poc-17.png)
+45. **Click** ‘Edit details’.
 	
-66. **Open** ‘Realtime Operational Analytics’ report.
+	![Edit Details.](media/report-4.png)
 
-	![Open Report.](media/fsi-poc-18.png)
+46. **Uncheck** ‘Display title and subtitle’.
+
+47. **Click** ‘Apply’.
+
+48. **Repeat** Step 46 to 48 for all image tiles.
+
+	![Repeat Steps.](media/report-5.png)
+
+49. After disabling ‘Display title and subtitle’ for all images, **resize** and **rearrange** the top images tiles as shown in the screenshot. Resize the Contoso Healthcare logo to 1x1 size; resize other vertical tiles to 2x1 size.  
+
+	![Resize and Rearrange.](media/report-6.png)
+
+50. Similarly pin left image tiles from ‘page 1’ of chicklets report to the Chief Customer officer Before dashboard.
+
+51. **Resize** and **rearrange** the left images tiles as shown in the screenshot. Resize the KPI tile to 1x2. Resize the Deep Dive to 1x4.
+
+	![Pin and Repeat.](media/report-7.png)
+
+	![Note.](media/report-8.png)
+
+	> **Note:** The cards in each Dashboard should be created in the Dashboard like ‘Negative Card’ as you can see in orange.
+
+52. To create a new tile like the car above **click** on edit button on dashboard.
+
+53. **Click** on add a tile button.
+
+	[Create a new tile.](media/report-9.png)
 	
-67. **Click** on ‘Realtime Operational Analytics Before’ page.
-
-68. Similarly, **pin** ‘Current Sessions’, ’Current Viewers’, ’Sessions Time (IN MINUTES)’,’Video Response Time (IN MILLISECONDS)’,’Streaming Devices’, ’Sessions by Video Categories (in Minutes)’ from the report to the ‘Fsi Dashboard-Before’ dashboard.
-
-	![Click and Pin.](media/fsi-poc-19.png)
+54. Then **go to** Text Box and there you can **add** the text and the text format it.
 	
-69. **Refer** to the screenshot of the sample dashboard and pin the visuals to replicate its look and feel. 
+	[Add text.](media/report-10.png)
 
-70. **Third** pillar ‘Realtime Operational Analytics’ is completed.
+55. **Refer** to the screenshot of the sample dashboard and pin the visuals to replicate its look and feel. 
 
-	![Refer to the Screenshot](media/fsi-poc-20.png)
+56. **Latest** pillar ‘Chief Customer Officer Before’ is completed.
 
-**Pillar 4:   Realtime Twitter Analytics**
+	[Pin the visuals.](media/report-11.png)
 
-71. Let’s **start** Pinning the fourth pillar ‘Realtime Twitter Analytics’.
+57. You will see some KPIs or charts like this KPI with title and subtitle. 1. Title, 2. Subtitle.
 
-72. **Select** the Workspace in [Task2](#task-2-create-power-bi-workspace).
+	[KPIs.](media/report-12.png)
 
-	![Select the workspace.](media/fsi-poc-21.png)
+58. **Go** to the cards more options.
 
-73. In the “Reports” section, there will be a list of all the published reports.
+59. **Click** on Edit Details.
 
-74. **Click** on ‘Fsi Twitter Report’ Report.
+	[Cards more options.](media/report-13.png)
 
-	![Click on Report.](media/fsi-poc-22.png)
+60. You will see something like this picture where you can add subtitle.
+	
+	[Add subtitle.](media/report-14.png)
 
-75. Similarly, **pin** ‘Avg. Sentiment Score’,’No. of Tweets’, ’Retweets’, ’Engagement by Hour on Day’, ’Hashtag by sentiment score’ from the report .
+61. The Dashboard “Chief Customer Officer Before” should finally look like this.
+Table in following row indicates which Kpi’s need to be pinned from which report to achieve this final look.
 
-	![Pin from the Report.](media/fsi-poc-23.png)
-  
-76. **Refer** to the screenshot of the sample dashboard and pin the visuals to replicate its look and feel.
+	[Final look.](media/report-15.png)
+	
+62. **Refer** to this table while pinning rest of the tiles to the dashboard.
+	
+	[Refer the table.](media/report-16.png)
 
-77. **Fourth** pillar ‘Realtime Twitter Analytics’ is completed.
+63. Here is the list of Dashboards you have to create for FSI. You will see the necessary details for the same below.
 
-	![Refer to the Screenshot.](media/fsi-poc-24.png)
+	[List of Dashboards.](media/report-17.png)
 
-78. After pinning all the pillars and Dashboard images the final dashboard will look like this
-  
-	![After Pinning.](media/fsi-poc-25.png)
+64. Chief Customer Officer After Dashboard should look like this. Following are the details of tiles for the same.
+
+	[Chief Customer Officer.](media/report-18.png)
+
+65. Chief Customer Officer After KPIs.
+
+	[Chief Customer Officer After KPIs.](media/report-19.png)
+
+66. ESG Dashboard Dashboard should look like this. Following are the details of tiles for the same.
+
+	[ESG Dashboard Dashboard.](media/report-20.png)
+
+67. ESG Dashboard KPIs
+
+	[ESG Dashboard KPIs.](media/report-21.png)
+
+68. Finance Dashboard should look like this. Following are the details of tiles for the same.
+
+	[Finance Dashboard.](media/report-22.png)
+
+69. Finance Dashboard KPIs
+
+	[Finance Dashboard KPIs.](media/report-23.png)
+
+70. Group Chief Risk Officer After Dashboard
+
+	[Group Chief Risk Officer.](media/report-24.png)
+
+71. Group Chief Risk Officer After Dashboard KPIs
+
+	[Group Chief Risk Officer After Dashboard KPIs.](media/report-25.png)
+
+72. Group Chief Risk Officer Before Dashboard
+
+	[Group Chief Risk Officer.](media/report-26.png)
+
+73. Group Chief Risk Officer Before KPIs
+
+	[Group Chief Risk Officer Before KPIs.](media/report-27.png)
+
+74. Head of Financial Intelligence After Dashboard
+
+	[Head of Financial Intelligence.](media/report-28.png)
+
+75. Head of Financial Intelligence After KPI
+
+	[Head of Financial Intelligence After KPI.](media/report-29.png)
+
+76. Head of Financial Intelligence Before Dashboard
+
+	[Head of Financial Intelligence.](media/report-30.png)
+
+77. Head of Financial Intelligence Before KPIs
+
+	[Head of Financial Intelligence Before KPIs.](media/report-31.png)
+
+78. Woodgrove Executive Dashboard Dec
+
+	[Woodgrove Executive Dashboard Dec.](media/report-32.png)
+
+79. Woodgrove Executive Dashboard Dec KPIs
+
+	[Woodgrove Executive Dashboard Dec KPIs.](media/report-33.png)
+
+80. Woodgrove Executive Dashboard June
+
+	[Woodgrove Executive Dashboard June.](media/report-34.png)
+
+81. Woodgrove Executive Dashboard June KPIs
+
+	[Woodgrove Executive Dashboard June KPIs.](media/report-35.png)
+
+82. Woodgrove Executive Dashboard March KPIs
+
+	[Woodgrove Executive Dashboard March KPIs.](media/report-36.png)
+
+83. Woodgrove Executive Dashboard September
+
+	[Woodgrove Executive Dashboard September.](media/report-37.png)
+
+84. Woodgrove Executive Dashboard September KPIs
+
+	[Woodgrove Executive Dashboard September KPIs.](media/report-38.png)
+
+85. Woodgrove Executive Dashboard September 2
+
+	[Woodgrove Executive Dashboard September 2.](media/report-39.png)
+
+86. Dashboard KPI’s.
+
+	[Dashboard KPI’s.](media/report-40.png)
+
+### Task 6: AML notebook execution
+
+1. **Open** the azure portal and go to resource group **‘DDib-FSI’.**
+
+2. **Type** in filter “amlws-” and open the resource.
+
+	[Open resource.](media/aml-1.png)
+
+3. **Click** “Launch studio”
+
+	[Launch studio.](media/aml-2.png)
+
+4. **Login** with the same user that you used for signing into the Azure Portal in [Task 1](#task-1-create-a-resource-group-in-azure).
+
+5. **Open** Compute section and enter compute name, **select** “ STANDARD_DS2_V2” as compute quota and **click** on create.
+
+	[Compute section and enter compute name.](media/aml-3.png)
+
+Note:  It will take few minutes to create a compute instance.
+
+6. **Open** Notebooks.
+
+7. **Click** on “ 8. Understanding and Removing Biases from Machine Learning Models using Azure Fairlearn” notebook.
+
+	[Open Notebooks.](media/aml-4.png)
+
+8. **Select** Compute created in step 5 and kernel as shown in image.
+
+9. **Click** run all.
+	
+	[Select Compute created.](media/aml-5.png)
+
+10. **Scroll** through the notebook cells, at cell 16 execution it will ask to do device login. Follow the steps with same user.
+
+	[Scroll through the notebook.](media/aml-6.png)
+
+
+11. **Scroll** down till the end and wait for the green tick.
+
+12. **Open** Experiments and see if experiments are created.
+
+	[Scroll and Open.](media/aml-7.png)
 
 **Task 6: Pause/Resume resources**
 
