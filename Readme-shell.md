@@ -751,7 +751,7 @@ Table in following row indicates which Kpi’s need to be pinned from which repo
 This task is optional since we have provided static versions of the reports in the package already.
 
 1. **Open** Power BI in a new tab using the following link:
-	https://app.powerbi.com/.
+	[https://app.powerbi.com/](https://app.powerbi.com/).
 
 2. **Sign into** Power BI using your Power BI Pro account.
 
