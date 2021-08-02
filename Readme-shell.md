@@ -789,6 +789,96 @@ This task is optional since we have provided static versions of the reports in t
 
 	![Create real time reports for rest.](media/realtime-report-8.png)
 
+**Updating Dashboard and Report Id’s in Web app:**
+By default, the web app will be provisioned with Gif placeholders for web app screens with dashboards. Once you have completed the steps listed above in this section, you can update the dashboard id’s generated in to the main web app if you choose. Here are the steps for it.
+
+1. **Navigate** to your Power BI workspace.
+
+2. **Click** on one of the dashboards you created. Eg. Woodgrove Executive dashboard June.
+
+	![Navigate and Click.](media/updating-powerbi.png)
+
+3. **Copy** the dashboard id from the url bar at the top.
+	
+	![Copy the dashboard id.](media/updating-powerbi-2.png)
+
+4. **Navigate** to azure portal.
+
+5. **Open** the Azure Cloud Shell by selecting its icon from the top toolbar.
+
+	![Navigate and Open.](media/updating-powerbi-3.png)
+
+6. **Click** on upload/download button.
+
+7. **Click** download.
+
+8. **Enter** the following path:  
+	
+	```
+	fsi/fsidemo/app_fsidemo/wwwroot/config.js
+	```
+
+9. **Click** Download button.
+
+	![Enter path and Click download button.](media/updating-powerbi-4.png)
+
+10. **Edit** the downloaded file in notepad.
+
+11. **Paste** the dashboard id you copied earlier between the double quotes of key ‘ceo_dashboard_march’.
+
+12. **Save** the changes to the file.
+
+	![Edit paste and save.](media/updating-powerbi-5.png)
+
+13. **Navigate** to azure portal.
+
+14. **Open** the Azure Cloud Shell by selecting its icon from the top toolbar.
+
+	![Navigate and Open.](media/updating-powerbi-6.png)
+
+15. **Click** upload/download button.
+
+16. **Click** upload.
+
+17. **Select** the config.js file you just updated.
+
+18. **Click** open.
+
+	![Select and Click open.](media/updating-powerbi-7.png)
+
+19. **Execute** following command in cloudshell:  
+	
+	```
+	cp config.js ./fsi/fsidemo/app_fsidemo/wwwroot
+	```
+	
+	![Execute the command.](media/updating-powerbi-8.png)
+
+20.	Execute  following command in cloudshell: 
+	
+	```
+	cd fsi/fsidemo/subscripts 
+	./updateWebAppSubScript.ps1
+	```
+	
+	![Execute the command.](media/updating-powerbi-9.png)
+
+21. From the Azure Cloud Shell, **copy** the authentication code. 
+
+22. **Click** on the link [https://microsoft.com/devicelogin](https://microsoft.com/devicelogin) and a new browser window will launch.
+
+	![Copy and Click on Link.](media/updating-powerbi-10.png)
+
+23. **Paste** the authentication code.
+
+24. **Select** appropriate username when prompted.
+
+25. Wait for script execution to complete.
+
+	![Paste select and wait.](media/updating-powerbi-11.png)
+
+> **Note:** You may be prompted to select your subscription if you have multiple subscriptions.
+
 ### Task 6: AML notebook execution
 
 1. **Open** the azure portal and go to resource group **‘DDib-FSI’.**
