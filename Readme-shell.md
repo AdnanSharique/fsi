@@ -534,19 +534,19 @@ Do the following to pin visuals to the dashboard you just created:
 
 29. **Click** on the “Content” section/tab.
 
-	![Create Dashboard further steps.](media/video-revenue-analytics-2.png)
+	![Create Dashboard further steps.](media/power-bi-dashboard-7.png)
 
 30. In the “Content” section, there will be a list of all the published reports.
 
 31. **Click** on ‘FSI CCO Dashboard’ report.
 
-	![Click on Video and Revenue Analytics.](media/video-revenue-analytics-3.png)
+	![Click on Video and Revenue Analytics.](media/power-bi-dashboard-8.png)
 
 32. **Click** on ‘Market perception before’ page.
 
 33. **Click** on pin visual button.
 
-	![Click on Pin Visual button.](media/video-revenue-analytics-4.png)
+	![Click on Pin Visual button.](media/power-bi-dashboard-9.png)
 
 34. **Select** ‘Existing dashboard’ radio button. 
 
@@ -554,11 +554,11 @@ Do the following to pin visuals to the dashboard you just created:
 
 36. **Click** ‘Pin’.
 
-	![Click Pin.](media/video-revenue-analytics-5.png)
+	![Click Pin.](media/power-bi-dashboard-10.png)
 
 37. Similarly, **pin** the others tiles to the Dashboard.
 
-	![Pin the others tiles.](media/video-revenue-analytics-6.png)
+	![Pin the others tiles.](media/power-bi-dashboard-11.png)
 
 38. **Select** workpace created in task 2 in the left pane.
 
@@ -566,7 +566,7 @@ Do the following to pin visuals to the dashboard you just created:
 
 39. **Open** 'FSI-Chicklets' report.
 
-	![Open report.](media/video-revenue-analytics-7.png)
+	![Open report.](media/power-bi-dashboard-12.png)
 
 40. To pin an image into Dashboard you have to go to the report, **click** on edit and then you will see the pin icon.
 
